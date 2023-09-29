@@ -113,9 +113,9 @@ main > a {
 /* Rubrique de formation */
 .rubriqueFormation {
   margin: 10px;
-  background-color: #fff; /* Fond blanc pour la lisibilité */
+  background-color: #fff; 
   padding: 20px;
-  border-radius: 10px; /* Coins arrondis */
+  border-radius: 10px; 
   break-inside: avoid;  /* Évite que les éléments soient divisés entre deux colonnes */
 }
 
