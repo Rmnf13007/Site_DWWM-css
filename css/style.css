@@ -1,59 +1,131 @@
 * {
   box-sizing: border-box;
-  border:solid 1px #007bff;
+ /* border:solid 1px #ffffff;*/
 }
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(/Images/A2-1920.jpg);
 }
+/* Header */
 header {
-  background-color: #333;
+  background-color: #ffffff;
   color: white;
-  display: flex; /* Utilisation de Flexbox */
-  align-items: center; /* Alignement vertical des éléments */
-  justify-content: flex-start;
-  padding: 1em;
+  overflow: hidden; /* Pour contenir les éléments flottants */
 }
-header > img {
-  height: 100px;
-  width: 150px;
+
+/* Logo */
+header img {
+  float: left;
+  height: auto;
+  width: 150px; /* Largeur spécifique */
+  margin-right: 20px;
+  background-color: #ffffff;margin-top: 15px;
+}
+
+/* Navigation */
+nav {
+  background-color: #44A33D; /* Couleur de fond de la nav */
+  float: left;
+  /* Largeur totale moins la largeur du logo et la marge */
+  width: calc(100% - 150px - 20px); 
+  margin-top: 20px;
+}
+
+/* Liste */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+/* Éléments de la liste */
+nav ul li {
+  display: inline-block; /* Alignés sur la même ligne */
+  border-right: 1px solid white;
+  margin-right: 20px;
   
 }
-nav > ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+/* Supprime la bordure sur le dernier élément de la liste */
+nav ul li:last-child {
+  border-right: none;
+}
+
+/* Liens */
+nav ul li a {
+  display: block; 
+  padding: 10px;  
+  text-decoration: none; 
+  color: white; 
+  background-color: #87BB34; /* Couleur de fond du logo AFPA */
+}
+/* Clearfix pour le header */
+header::after {
+  clear: both;
+}
+
+.My_container_main {
+  
   display: flex;
-  flex-wrap: nowrap;  
-}
-nav > ul > li {
-  margin: 0 15px;
-}
-nav > ul > li > a {
-  text-decoration: none;
-  color: white;
-}
-main {
-  padding: 2em;
-  text-align: center;
-  background-image: url(/Images/A2-1920.jpg);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(189, 189, 189, 0.521); /* Gris avec opacité de 0.9 */
+  padding: 5%;
+  margin: 5% 30% 50% 5%;
+  min-height: 50vh;
 }
 main > h1 {
   font-size: 2em;
-  margin-bottom: 0.5em;
+  color: white;
 }
 main > h2 {
   font-size: 1.5em;
-  margin-bottom: 1em;
+  color: white;
+  margin-bottom: 5%;
 }
 main > a {
-  background-color: #007bff;
+  background-color:#8ec635;;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 15px;
   text-decoration: none;
   border-radius: 5px;
 }
-main a:hover {
-  background-color: #0056b3;
+ a:hover {
+  background-color:#5f8423;
+}
+
+/* Conteneur de colonnes pour la formation */
+.colFormation {
+  column-count: 2;
+  column-gap: 20px;
+  text-align: center; 
+  ; /* Espace entre les colonnes */
+}
+
+/* Rubrique de formation */
+.rubriqueFormation {
+  margin: 10px;
+  background-color: #fff; /* Fond blanc pour la lisibilité */
+  padding: 20px;
+  border-radius: 10px; /* Coins arrondis */
+  break-inside: avoid;  /* Évite que les éléments soient divisés entre deux colonnes */
+}
+
+/* Titre de la rubrique */
+.rubriqueFormation-Titre {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Description de la rubrique */
+.rubriqueFormation-Description {
+  font-size: 14px;
 }
