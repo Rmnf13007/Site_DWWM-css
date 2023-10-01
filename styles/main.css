@@ -1,0 +1,72 @@
+
+
+main{
+  display: block;
+  padding: 15px;
+  margin: 15px;
+  color: #ffffff;
+  background-color: rgba(164, 164, 164, 0.525);
+}
+main > h1 ,h2 {
+
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  
+  
+  
+  
+
+  
+  margin-top: 0;
+  margin-bottom: 20px;
+  
+  background-color: #87BB34;
+  border-radius: 10px ;
+}
+
+main >h2 + a{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #bb3434;
+  border-radius: 10px ;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.colFormation{
+  display: inline-block;
+  margin:15px;
+  padding: 15px;
+  width: 48%;
+  border: #ffffff solid 1px;
+  background-color: rgba(164, 164, 164, 0.525);
+} 
+
+.carte-temoignage{  
+  justify-self: center;
+  margin:15px;
+  padding: 15px;
+  border: #ffffff solid 1px;  
+  width: 100%;
+  background-color: rgba(164, 164, 164, 0.525);
+  }
+
+.rubriqueFormation-Titre{ 
+  width: 600px;
+  text-align: center;
+  margin: auto  ;  
+  padding: 15px;
+  background-color: #44A33D;
+}
+.rubriqueFormation-Description{ 
+  
+  padding: 15px;
+  margin: auto  ;  
+}
+
